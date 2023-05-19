@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 11</title>
+    <script>
+        var dentroIntervalo = 0;
+        var foraIntervalo = 0;
+
+        for (var i = 1; i <= 10; i++) {
+            const valor = parseInt(prompt("Digite o valor " + i + ":"));
+
+            if (valor >= 24 && valor <= 42) {
+                dentroIntervalo++;
+            } else {
+                foraIntervalo++;
+            }
+        }
+
+        alert("Valores dentro do intervalo: " + dentroIntervalo);
+        alert("Valores fora do intervalo: " + foraIntervalo);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

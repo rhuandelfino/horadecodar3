@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 7</title>
+    <script>
+        var totalNotas = 6;
+        var notas = [];
+
+        for (var i = 0; i < totalNotas; i++) {
+            var nota;
+            do {
+                nota = parseFloat(prompt("Digite a nota " + (i + 1) + ":"));
+            } while (nota < 0 || nota > 10);
+            notas.push(nota);
+        }
+
+        var somaNotas = notas.reduce((soma, nota) => soma + nota, 0);
+        var media = somaNotas / totalNotas;
+
+        alert("A média do aluno é: " + media);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

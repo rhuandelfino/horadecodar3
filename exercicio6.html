@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 6</title>
+    <script>
+        var quantidadeAprovados = 0;
+
+        do {
+            var nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+            var nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+
+            var media = (nota1 + nota2) / 2;
+
+            if (media >= 9.5) {
+                quantidadeAprovados++;
+            }
+
+            var resposta = prompt("Calcular a média de outro aluno? (S/N)").toUpperCase();
+
+            if (resposta !== "S") {
+                break;
+            }
+        } while (true);
+
+        alert("Quantidade de alunos aprovados: " + quantidadeAprovados);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

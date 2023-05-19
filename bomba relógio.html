@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 1</title>
+    <script>
+
+        var tempo = 30;
+
+
+        const contar = () => {
+            if (tempo >= 0) {
+                console.log(tempo);
+                tempo--;
+                setTimeout(contar, 1000);
+            } else {
+                console.log("EXPLOSÃO");
+            }
+        };
+
+        contar();
+
+    </script>
+</head>
+
+<body>
+    <h1 style="font-family: monospace; text-align: center;">BOMBA RELÓGIO</h1>
+
+    <h2 style="font-family: monospace; text-align:center;">VAI EXPLODIRRRR</h2>
+</body>
+
+</html>
